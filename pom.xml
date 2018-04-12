@@ -37,7 +37,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>/jenkins/src/main/java/com/sugon/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/main/java/com/sugon/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 				<version>2.4</version>
