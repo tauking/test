@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test-parameter]">
+  <test thread-count="5" name="example1(failed)">
+    <groups>
+      <run>
+        <include name="groupA"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.sugon.parameter.TestParameterDataProvider4">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.sugon.parameter.TestParameterDataProvider4 -->
+    </classes>
+  </test> <!-- example1(failed) -->
+</suite> <!-- Failed suite [test-parameter] -->
