@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class testMQL {
   @Test
-  public void f() throws Exception {
+  public void f4() throws Exception {
 	  String s;
 		Process proc = Runtime.getRuntime().exec("python AUS/testMQL.py");
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(proc.getInputStream(),"gbk"));

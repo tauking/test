@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class createDataSet {
 	@Test
-	public void f() throws Exception{
+	public void f2() throws Exception{
 		String s;
 		Process proc = Runtime.getRuntime().exec("python AUS/createdataset.py");
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(proc.getInputStream(),"gbk"));

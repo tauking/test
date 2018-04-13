@@ -9,7 +9,7 @@ import com.sugon.Util;
 
 public class install {
   @Test
-  public void f() {
+  public void f1() {
 	  	Shell shell = new Shell(Util.ip, Util.username, Util.password);
 	    shell.execute("sh "+Util.install+" "+Util.password+" "+Util.ip);
 	    //shell.execute("sh /root/untar.sh 123456 172.16.0.93");
