@@ -4,7 +4,10 @@
 	<test name="TestCase1">
 
 		<classes>
-			<class name="com.sugon.test.all"/>
+			<class name="com.sugon.test.install"/>
+			<class name="com.sugon.test.createDataSet"/>
+			<class name="com.sugon.test.insertData"/>
+			<class name="com.sugon.test.testMQL"/>
 		</classes>
 	</test>
 </suite>

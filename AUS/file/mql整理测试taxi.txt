@@ -1,0 +1,32 @@
+Search taxi
+search intime ,src from taxi
+search taxi limit 5
+search taxi  where PlateID="粤A0XX26"
+yichangceshi
+search taxi | cnt(1) group by Gpstime
+search taxi map t1 |using t1 cnt(1) group by Gpstime
+~!@#
+SQL "select * from taxi where Dir='0' "
+search taxi | (sum(Dir) AS s,cnt(1) AS c) group by Gpstime  MAP t1 |SQL"select Gpstime ,s/c from t1"
+
+search taxi MAP t1 | (sum(Dir) AS s,cnt(1) AS c) group by Gpstime  MAP t2 |SQL"select Gpstime ,s/c from t2" MAP t3 | return t1,t2,t3
+
+search * from taxi where fmt='atom' and Dir>=100 and Dir <=180
+search * from taxi where fmt='atom' and Dir<=100 or Dir >=180
+search * from taxi where not (Dir=0)
+search id from ixat where name='sugon' map t1 | search taxi where Eff  in t1.id
+
+search taxi MAP t1 | (sum(Dir) AS s,cnt(1) AS c) group by Gpstime  MAP t2 |SQL"select Gpstime ,s/c from t2" MAP t3 | return t1,t2,t3
+
+search taxi|cnt(1) group by (Dir,Eff)
+
+search taxi |cnt(1) group by Dir STEP 10
+search taxi |cnt(1) group by Dir STEP 10 HAVING COUNT 0
+search taxi |cnt(1) group by Gpstime STEP 1s
+search taxi |cnt(1) group by Gpstime STEP 1s having count 2
+
+search taxi | (max(Dir) AS max,min(Eff) AS min,distinct(PlateID) AS p, sum(Dir) AS s,cnt(1) AS c) group by Gpstime  MAP t1 |SQL"select Gpstime ,max,min,p,s/c from t1"
+
+search taxi | percentile(Dir)
+
+search taxi | percentile_ranks(Dir, 5, 15, 25)
