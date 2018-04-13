@@ -4,8 +4,20 @@
 	<test name="TestCase1" preserve-order="true">
 		<classes>
 			<class name="com.sugon.test.install"/>
+		</classes>
+	</test>
+	<test name="TestCase2" preserve-order="true">
+		<classes>
 			<class name="com.sugon.test.createDataSet"/>
+		</classes>
+	</test>
+	<test name="TestCase3" preserve-order="true">
+		<classes>
 			<class name="com.sugon.test.insertData"/>
+		</classes>
+	</test>
+	<test name="TestCase4" preserve-order="true">
+		<classes>
 			<class name="com.sugon.test.testMQL"/>
 		</classes>
 	</test>
