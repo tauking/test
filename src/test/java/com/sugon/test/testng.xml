@@ -7,7 +7,7 @@
 			<class name="com.sugon.test.createDataSet"/>
 			<class name="com.sugon.test.insertData"/>
 			<class name="com.sugon.test.testMQL"/> -->
-			<class name="com.sugon.test.all"/>
+			<class name="com.sugon.test.NewTest"/>
 		</classes>
 	</test>
 </suite>
