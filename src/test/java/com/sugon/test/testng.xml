@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="TestDependency">
 
-	<test name="TestCase1" preserve-order="true">
+	<test name="TestCase1">
 		<classes>
 			<!-- <class name="com.sugon.test.install"/>
 			<class name="com.sugon.test.createDataSet"/>
