@@ -9,7 +9,7 @@ public class Util {
 	public static String password;
 	public static String install;
 	public static String insertdataset;
-	static {
+	public static void main(String[] args) {
 		InputStream is = Util.class.getResourceAsStream("cofig.properties");
 		Properties properties = new Properties();
 		try {
