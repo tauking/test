@@ -1,5 +1,5 @@
-curl -XGET 'http://172.16.0.93:20001/api/auth/login?userName=admin&password=ausadmin123'
-curl -XPOST '172.16.0.93:20001/api/datain/bulk_insert' -H 'Content-Type: application/json' -d '{"data":[
+curl -XGET 'http://'$1':20001/api/auth/login?userName=admin&password=ausadmin123'
+curl -XPOST ''$1':20001/api/datain/bulk_insert' -H 'Content-Type: application/json' -d '{"data":[
 {"testInteger":"1","testFloat":"1.1","src":"gci.s22","intime":"2016-08-13 12:29:24","dataattr":"fmt=atom","dataschema":"gci.s22.d04.1","fmt":"atom","Gpstime":"2016-08-13 12:29:23","Lon":113.25466,"Lat":23.05601,"GpsSpeed":0,"Dir":0,"Eff":1,"CarryStatus":1,"PlateID":"粤AM4H64","geoPos":{"lat":23.05601,"lon":113.25466}},
 {"testInteger":"1","testFloat":"1.1","src":"gci.s22","intime":"2016-08-13 12:29:24","dataattr":"fmt=atom","dataschema":"gci.s22.d04.1","fmt":"atom","Gpstime":"2016-08-13 12:29:23","Lon":113.25466,"Lat":23.05601,"GpsSpeed":0,"Dir":0,"Eff":1,"CarryStatus":1,"PlateID":"粤AM4H64","geoPos":{"lat":23.05601,"lon":113.25466}},
 {"testInteger":"2","testFloat":"2.2","src":"gci.s22","intime":"2016-08-13 12:29:25","dataattr":"fmt=atom","dataschema":"gci.s22.d04.1","fmt":"atom","Gpstime":"2016-08-13 12:29:25","Lon":113.25684,"Lat":23.12922,"GpsSpeed":59,"Dir":180,"Eff":1,"CarryStatus":1,"PlateID":"粤A0XX26","geoPos":{"lat":23.12922,"lon":113.25684}},
@@ -13,7 +13,7 @@ curl -XPOST '172.16.0.93:20001/api/datain/bulk_insert' -H 'Content-Type: applica
 {"testInteger":"10","testFloat":"10.10","src":"gci.s22","intime":"2016-08-13 12:29:25","dataattr":"fmt=atom","dataschema":"gci.s22.d04.1","fmt":"atom","Gpstime":"2016-08-13 12:29:24","Lon":113.31996,"Lat":23.10462,"GpsSpeed":18,"Dir":220,"Eff":1,"CarryStatus":1,"PlateID":"粤AS7M94","geoPos":{"lat":23.10462,"lon":113.31996}},
 {"testInteger":"11","testFloat":"11.11","src":"gci.s22","intime":"2016-08-13 12:29:24","dataattr":"fmt=atom","dataschema":"gci.s22.d04.1","fmt":"atom","Gpstime":"2016-08-13 12:29:23","Lon":113.31456,"Lat":23.26371,"GpsSpeed":0,"Dir":0,"Eff":1,"CarryStatus":1,"PlateID":"粤AL3N57","geoPos":{"lat":23.26371,"lon":113.31456}}
 ],"token":"CAEB3FC3685CF253527FAB7A2D4859BEadmin", "datasetName":"taxi"}'
-curl -XPOST '172.16.0.93:20001/api/datain/bulk_insert' -H 'Content-Type: application/json' -d '{"data":[
+curl -XPOST ''$1':20001/api/datain/bulk_insert' -H 'Content-Type: application/json' -d '{"data":[
 {"name":"hehe","id":"11"},
 {"name":"sugon","id":"1"},
 {"name":"sugon","id":"11"}

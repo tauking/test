@@ -39,7 +39,7 @@ public class NewTest {
 	@Parameters({ "ip", "username", "password", "insertdataset" })
 	public void insertData(String ip, String username, String password, String insertdataset) {
 		Shell shell = new Shell(ip, username, password);
-		shell.execute("sh " + insertdataset);
+		shell.execute("sh " + insertdataset+" "+ip);
 		// shell.execute("sh /root/insertdataset.sh");
 		ArrayList<String> stdout = shell.getStandardOutput();
 		for (String str : stdout) {
