@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-TestDependency">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestDependency" title="com.sugon.test.NewTest" hash-for-method="test(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh)">test(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-TestDependency" title="com.sugon.test.test1" hash-for-method="install(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-...)">install(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestDependency -->
@@ -120,15 +120,15 @@
           <div class="suite-TestDependency-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.sugon.test.NewTest</span>
+              <span class="class-name">com.sugon.test.test1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh)">
-                  </a> <!-- test(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh) -->
-                  <span class="method-name">test</span>
-                  <span class="parameters">(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh)</span>
+                  <a name="install(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-...)">
+                  </a> <!-- install(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-...) -->
+                  <span class="method-name">install</span>
+                  <span class="parameters">(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-AUS-4.1.0.24181.tar.gz, XData-AUS-dept-4.1.tar.gz)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,13 +144,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestDependency&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestCase1&quot;&gt;
+    &lt;parameter name=&quot;installtar-3&quot; value=&quot;XData-AUS-dept-4.1.tar.gz&quot;/&gt;
+    &lt;parameter name=&quot;installtar&quot; value=&quot;XData-AUS4.1.0.24181.58&quot;/&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;123456&quot;/&gt;
     &lt;parameter name=&quot;install&quot; value=&quot;/root/untar.sh&quot;/&gt;
     &lt;parameter name=&quot;ip&quot; value=&quot;172.16.0.93&quot;/&gt;
+    &lt;parameter name=&quot;installtar-1&quot; value=&quot;aus-autoinstall.24181.sh&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;root&quot;/&gt;
     &lt;parameter name=&quot;insertdataset&quot; value=&quot;/root/insertdataset.sh&quot;/&gt;
+    &lt;parameter name=&quot;installtar-2&quot; value=&quot;XData-AUS-4.1.0.24181.tar.gz&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.sugon.test.NewTest&quot;/&gt;
+      &lt;class name=&quot;com.sugon.test.test1&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestCase1 --&gt;
 &lt;/suite&gt; &lt;!-- TestDependency --&gt;
@@ -192,14 +196,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'com.sugon.test.NewTest')
-data.setCell(0, 3, 15);
+data.setCell(0, 1, 'install')
+data.setCell(0, 2, 'com.sugon.test.test1')
+data.setCell(0, 3, 13);
 window.suiteTableData['TestDependency']= { tableData: data, tableDiv: 'times-div-TestDependency'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 ms</span>
+              <span class="suite-total-time">Total running time: 13 ms</span>
               <div id="times-div-TestDependency">
               </div> <!-- times-div-TestDependency -->
             </div> <!-- times-div -->
@@ -225,9 +229,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.sugon.test.NewTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.sugon.test.test1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">test(172.16.0.93, root, 123456, /root/untar.sh, /root/insertdataset.sh)</span>
+                <span class="method-name">install(172.16.0.93, root, 123456, /root/untar.sh, XData-AUS4.1.0.24181.58, aus-autoinstall.24181.sh, XData-...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

@@ -1,24 +1,23 @@
 package com.sugon.test;
 
 import java.io.BufferedReader;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Properties;
 
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.sugon.Shell;
 
 public class NewTest {
-	
+
 	@Test(priority = 0)
-	@Parameters({"ip","username","password","install"})
-	public void install(String ip,String username,String password,String install) {
+	@Parameters({ "ip", "username", "password", "install", "installtar", "installtar-1", "installtar-2",
+			"installtar-3" })
+	public void install(String ip, String username, String password, String install, String it, String it1, String it2,
+			String it3) {
 		Shell shell = new Shell(ip, username, password);
-		shell.execute("sh " + install + " " + password + " " + ip);
+		shell.execute("sh " + install + " " + it + " " + it1 + " " + it2 + " " + it3 + " " + password + " " + ip);
 		// shell.execute("sh /root/untar.sh 123456 172.16.0.93");
 		ArrayList<String> stdout = shell.getStandardOutput();
 		for (String str : stdout) {
@@ -37,8 +36,8 @@ public class NewTest {
 	}
 
 	@Test(priority = 2)
-	@Parameters({"ip","username","password","insertdataset"})
-	public void insertData(String ip,String username,String password,String insertdataset) {
+	@Parameters({ "ip", "username", "password", "insertdataset" })
+	public void insertData(String ip, String username, String password, String insertdataset) {
 		Shell shell = new Shell(ip, username, password);
 		shell.execute("sh " + insertdataset);
 		// shell.execute("sh /root/insertdataset.sh");
@@ -47,6 +46,7 @@ public class NewTest {
 			System.out.println(str);
 		}
 	}
+
 	@Test(priority = 3)
 	public void testMQL() throws Exception {
 		String s;

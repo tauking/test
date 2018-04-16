@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestDependency" duration-ms="256" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
+  <suite name="TestDependency" duration-ms="49" started-at="2018-04-16T08:52:45Z" finished-at="2018-04-16T08:52:45Z">
     <groups>
     </groups>
-    <test name="TestCase1" duration-ms="256" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
-      <class name="com.sugon.test.NewTest">
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sugon.test.NewTest@548a9f61]" name="test" duration-ms="15" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
+    <test name="TestCase1" duration-ms="49" started-at="2018-04-16T08:52:45Z" finished-at="2018-04-16T08:52:45Z">
+      <class name="com.sugon.test.test1">
+        <test-method status="PASS" signature="install(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sugon.test.test1@548a9f61]" name="install" duration-ms="13" started-at="2018-04-16T08:52:45Z" finished-at="2018-04-16T08:52:45Z">
           <params>
             <param index="0">
               <value>
@@ -31,14 +31,29 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[/root/insertdataset.sh]]>
+                <![CDATA[XData-AUS4.1.0.24181.58]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[aus-autoinstall.24181.sh]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[XData-AUS-4.1.0.24181.tar.gz]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[XData-AUS-dept-4.1.tar.gz]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- com.sugon.test.NewTest -->
+        </test-method> <!-- install -->
+      </class> <!-- com.sugon.test.test1 -->
     </test> <!-- TestCase1 -->
   </suite> <!-- TestDependency -->
 </testng-results>

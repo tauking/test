@@ -7,11 +7,11 @@
 		<parameter name="password" value="123456" />
 		<parameter name="install" value="/root/untar.sh" />
 		<parameter name="insertdataset" value="/root/insertdataset.sh" />
+		<parameter name="installtar" value="XData-AUS4.1.0.24181.58" />
+		<parameter name="installtar-1" value="aus-autoinstall.24181.sh" />
+		<parameter name="installtar-2" value="XData-AUS-4.1.0.24181.tar.gz" />
+		<parameter name="installtar-3" value="XData-AUS-dept-4.1.tar.gz" />
 		<classes>
-			<!-- <class name="com.sugon.test.install"/>
-			<class name="com.sugon.test.createDataSet"/>
-			<class name="com.sugon.test.insertData"/>
-			<class name="com.sugon.test.testMQL"/> -->
 			<class name="com.sugon.test.NewTest"/>
 		</classes>
 	</test>
