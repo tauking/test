@@ -2,16 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3386" started-at="2018-04-13T07:23:54Z" finished-at="2018-04-13T07:23:57Z">
+  <suite name="TestDependency" duration-ms="256" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3386" started-at="2018-04-13T07:23:54Z" finished-at="2018-04-13T07:23:57Z">
-      <class name="com.sugon.test.insertData">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.sugon.test.insertData@5419f379]" name="f" duration-ms="3326" started-at="2018-04-13T07:23:54Z" finished-at="2018-04-13T07:23:57Z">
+    <test name="TestCase1" duration-ms="256" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
+      <class name="com.sugon.test.NewTest">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.sugon.test.NewTest@548a9f61]" name="test" duration-ms="15" started-at="2018-04-16T05:44:09Z" finished-at="2018-04-16T05:44:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[172.16.0.93]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[root]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/root/untar.sh]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[/root/insertdataset.sh]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.sugon.test.insertData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- test -->
+      </class> <!-- com.sugon.test.NewTest -->
+    </test> <!-- TestCase1 -->
+  </suite> <!-- TestDependency -->
 </testng-results>

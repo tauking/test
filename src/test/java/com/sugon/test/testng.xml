@@ -2,6 +2,11 @@
 <suite name="TestDependency">
 
 	<test name="TestCase1">
+		<parameter name="ip" value="172.16.0.93" />
+		<parameter name="username" value="root" />
+		<parameter name="password" value="123456" />
+		<parameter name="install" value="/root/untar.sh" />
+		<parameter name="insertdataset" value="/root/insertdataset.sh" />
 		<classes>
 			<!-- <class name="com.sugon.test.install"/>
 			<class name="com.sugon.test.createDataSet"/>

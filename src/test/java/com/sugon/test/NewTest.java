@@ -7,35 +7,16 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.sugon.Shell;
 
 public class NewTest {
 	
-	public static String ip;
-	public static String username;
-	public static String password;
-	public static String install;
-	public static String insertdataset;
-	@BeforeTest
-	public void BeforeTest(){
-		InputStream is = NewTest.class.getResourceAsStream("cofig.properties");
-		Properties properties = new Properties();
-		try {
-			properties.load(is);
-			ip = properties.getProperty("ip");
-			username = properties.getProperty("username");
-			password = properties.getProperty("password");
-			install = properties.getProperty("shell-install");
-			insertdataset = properties.getProperty("shell-insertdataset");
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-	}
-	
 	@Test(priority = 0)
-	public void install() {
+	@Parameters({"ip","username","password","install"})
+	public void install(String ip,String username,String password,String install) {
 		Shell shell = new Shell(ip, username, password);
 		shell.execute("sh " + install + " " + password + " " + ip);
 		// shell.execute("sh /root/untar.sh 123456 172.16.0.93");
@@ -56,7 +37,8 @@ public class NewTest {
 	}
 
 	@Test(priority = 2)
-	public void insertData() {
+	@Parameters({"ip","username","password","insertdataset"})
+	public void insertData(String ip,String username,String password,String insertdataset) {
 		Shell shell = new Shell(ip, username, password);
 		shell.execute("sh " + insertdataset);
 		// shell.execute("sh /root/insertdataset.sh");
