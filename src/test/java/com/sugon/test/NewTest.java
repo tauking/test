@@ -2,21 +2,18 @@ package com.sugon.test;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 import org.testng.annotations.Test;
 
 import com.sugon.Shell;
-import com.sugon.Util;
 
 public class NewTest {
 	@Test(priority = 0)
 	public void install() {
-		/*Shell shell = new Shell(Util.ip, Util.username, Util.password);
-		shell.execute("sh " + Util.install + " " + Util.password + " " + Util.ip);*/
-		Shell shell = new Shell("172.16.0.93", "root", "123456");
-	    shell.execute("sh /root/untar.sh 123456 172.16.0.93");
+		Shell shell = new Shell(Util.ip, Util.username, Util.password);
+		shell.execute("sh " + Util.install + " " + Util.password + " " + Util.ip);
+		// shell.execute("sh /root/untar.sh 123456 172.16.0.93");
 		ArrayList<String> stdout = shell.getStandardOutput();
 		for (String str : stdout) {
 			System.out.println(str);
@@ -35,10 +32,9 @@ public class NewTest {
 
 	@Test(priority = 2)
 	public void insertData() {
-		/*Shell shell = new Shell(Util.ip, Util.username, Util.password);
-		shell.execute("sh " + Util.insertdataset);*/
-		Shell shell = new Shell("172.16.0.93", "root", "123456");
-	    shell.execute("sh /root/insertdataset.sh");
+		Shell shell = new Shell(Util.ip, Util.username, Util.password);
+		shell.execute("sh " + Util.insertdataset);
+		// shell.execute("sh /root/insertdataset.sh");
 		ArrayList<String> stdout = shell.getStandardOutput();
 		for (String str : stdout) {
 			System.out.println(str);
