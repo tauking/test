@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterTest;
 
 public class all {
-  @Test
+  @Test(priority = 1)
   public void f() throws Exception {
 	  String s;
 		Process proc = Runtime.getRuntime().exec("python F:\\sugon\\20180330\\AutoTestforAUS\\AUS\\createdataset.py");
@@ -30,7 +30,7 @@ public class all {
 	      System.out.println(str); 
 	    }
   }
-  @BeforeTest
+  @Test(priority = 0)
   public void beforeTest() {
 	  Shell shell = new Shell("172.16.0.93", "root", "123456");
 	    shell.execute("sh /root/untar.sh 123456 172.16.0.93");
@@ -41,7 +41,7 @@ public class all {
 	    } 
   }
 
-  @AfterTest
+  @Test(priority = 2)
   public void afterTest() throws Exception {
 	  String s;
 		Process proc = Runtime.getRuntime().exec("python F:\\sugon\\20180330\\AutoTestforAUS\\AUS\\testMQL.py");
