@@ -2,14 +2,14 @@
 <suite name="TestDependency">
 
 	<test name="TestCase1">
-		<parameter name="ip" value="172.16.0.93" />
+		<parameter name="ip" value="172.16.0.95" />
 		<parameter name="username" value="root" />
-		<parameter name="password" value="123456" />
+		<parameter name="password" value="Sugon123" />
 		<parameter name="install" value="/root/untar.sh" />
 		<parameter name="insertdataset" value="/root/insertdataset.sh" />
-		<parameter name="installtar" value="XData-AUS4.1.0.24181.58" />
-		<parameter name="installtar-1" value="aus-autoinstall.24181.sh" />
-		<parameter name="installtar-2" value="XData-AUS-4.1.0.24181.tar.gz" />
+		<parameter name="installtar" value="XData-AUS4.1.0.25825.68" />
+		<parameter name="installtar-1" value="aus-autoinstall.25825.sh" />
+		<parameter name="installtar-2" value="XData-AUS-4.1.0.25825.tar.gz" />
 		<parameter name="installtar-3" value="XData-AUS-dept-4.1.tar.gz" />
 		<classes>
 			<class name="com.sugon.test.NewTest"/>

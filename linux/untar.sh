@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /root
-tar -zxvf $1.tar.gz
+cd /root/
+##tar -zxvf $1.tar.gz
 ##sleep 20s
 cd $1
 cp $2 /root/
